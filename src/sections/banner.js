@@ -6,7 +6,29 @@ import ShapeLeft from "assets/shape-left.png";
 import ShapeRight from "assets/shape-right.png";
 
 export default function Banner() {
-  return <section>{/* 39.55 */}</section>;
+  return (
+    <section sx={styles.banner} id="home">
+      <Container sx={styles.banner.container}>
+        <Box sx={styles.banner.contentBox}>
+          <Heading as="h1" variant="heroPrimary">
+            Explore Top Quality Digital Products
+          </Heading>
+
+          <Text as="p" variant="heroSecondary">
+            Checkout our website to find great Software products &amp; Deals!{" "}
+            <br />
+            In need of aesthetic new website or web application this is the
+            right place.
+          </Text>
+          <Button variant="primary">Explore</Button>
+        </Box>
+
+        <Box sx={styles.banner.imageBox}>
+          <Image src={BannerImg} alt="banner" />
+        </Box>
+      </Container>
+    </section>
+  );
 }
 
 const styles = {
