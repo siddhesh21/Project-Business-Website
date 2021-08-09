@@ -77,7 +77,7 @@ export default function ServiceSection() {
             {data.features.map((feature) => (
               <Box sx={styles.card} key={feature.id}>
                 <Image
-                  src={item.imgSrc}
+                  src={feature.imgSrc}
                   alt={feature.altText}
                   sx={styles.icon}
                 />
