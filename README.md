@@ -1,1 +1,1 @@
-## Getting Started --> Info on App coming soon
+## Getting Started --> Info on Business App coming soon
