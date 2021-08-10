@@ -1,9 +1,33 @@
 import React from 'react';
+import { IoIosNavigate } from 'react-icons/io';
 import { Flex, Box, IconButton } from 'theme-ui';
 
 export default function List({ items = [], parentStyle, childStyle }) {
   return (
-    <h1>List</h1>
+    <Box as="ul"
+    sx={{
+      listStyleType: "none",
+      margin: 0,
+      padding: 0,
+      ...parentStyle
+
+    }}> 
+    {/* icon, text, isAvailable */}
+    {items.map((item, i) => (
+      <Flex 
+      className={item.isAvailable ? "open" : "closed"}
+      as="li"
+      sx={{...childStyle}}
+      key={i}
+      >
+        <IconButton sx={styles.listIcon} aria-label="list">
+          {item.icon}
+        </IconButton>
+        {item.text}
+      </Flex>
+    ))}
+
+    </Box>
   );
 }
 
