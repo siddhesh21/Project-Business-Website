@@ -183,7 +183,7 @@ export default function TeamSection() {
       <Container>
         <SectionHeader 
         slogan="Our Team"
-        title="Individuals with immense Work Ethic &amp; Obssesive over Creativity."
+        title="Individuals with immense Work Ethic &amp; Obsessiveness over Creativity."
         />
         <Grid sx={styles.grid}>
           {data.map((item) => (
